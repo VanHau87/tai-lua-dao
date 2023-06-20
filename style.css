@@ -94,7 +94,6 @@ nav a {
 }
 .half + .half {
   border-left: 2px solid #0bb5b8;
-  /* padding-right: 10px; Tùy chọn: Thêm khoảng cách nếu cần thiết */
 }
 .text-team {
   width: 60%;
@@ -125,4 +124,25 @@ nav a {
 }
 .detail .text {
   margin-left: 15px;
+}
+.services {
+  display: flex;
+}
+.tu-van {
+  flex: 3;
+  background-color: #f8f8f8;
+  padding: 0px;
+  border-right: 2px solid #0bb5b8;
+  margin: 5px;
+}
+.tu-van h2 {
+  border: 1.5px solid rgb(53, 239, 236);
+  border-radius: 50%;
+  padding: 50px;
+}
+
+.list-dich-vu {
+  flex: 7;
+  padding: 20px;
+  justify-content: flex-start;
 }
