@@ -1,0 +1,115 @@
+html {
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0 !important;
+}
+body {
+  font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-index {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+#logo {
+  width: 70%;
+  padding-bottom: 60px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.team-header {
+  width: 66.3%;
+  margin-left: auto;
+  padding: 20px;
+}
+.main-content {
+  flex: 7;
+  padding: 20px;
+  background-image: url('./img/background.png');
+  background-size: cover;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+  padding: 10px 30px;
+  font-size: large;
+}
+
+.language-switcher {
+  margin: 10px 0;
+}
+.container-team {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+}
+.section-doingu {
+  display: flex;
+  flex-direction: column;
+}
+.section {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.half {
+  flex: 1;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 0;
+}
+.half + .half {
+  border-left: 2px solid #0bb5b8;
+  /* padding-right: 10px; Tùy chọn: Thêm khoảng cách nếu cần thiết */
+}
+.text-team {
+  width: 60%;
+  text-align: start;
+}
+.title {
+  padding-left: 25px;
+  border-bottom: 2px solid #0bb5b8;
+  margin-bottom: 0;
+}
+.imgs {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 25px;
+}
+.imgs img {
+  width: 200px;
+}
