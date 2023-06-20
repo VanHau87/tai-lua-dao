@@ -113,3 +113,16 @@ nav a {
 .imgs img {
   width: 200px;
 }
+.info {
+  padding: 15px 25px;
+}
+.detail {
+  display: flex;
+}
+.detail img {
+  width: 40px;
+  height: 40px;
+}
+.detail .text {
+  margin-left: 15px;
+}
