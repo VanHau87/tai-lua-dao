@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-index" id="home">
+        <div class="sidebar">
+            <img src="./img/logo.png" alt="Logo" id="logo">
+            <h2>GATEWAY TO SUCCESS</h2>
+            <p>FINANCIAL ADVISORY</p>
+            <p>AUDIT</p>
+            <p>ACCOUNTING & TAX</p>
+        </div>
+        <div class="main-content">
+            <div class="header">
+                <nav>
+                    <a href="#" class="home">Home</a>
+                    <a href="#" class="team">Our team</a>
+                    <a href="#" class="services">Service</a>
+                    <a href="#" class="contact">Contact</a>
+                </nav>
+                <div class="language-switcher">
+                    <a href="index.html">Tiếng Việt</a> |
+                    <a href="index_en.html">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-team"id="team">
+        <div class="section-doingu" id="doingu">
+            <h1 class="title">OUR TEAM</h1>
+            <div class="section">
+                <div class="half">
+                    <h2>EXPERIENCED PROFESSIONALS</h2>
+                    <p class="text-team">Our team consists of highly experienced professionals from the Big Four Accounting firm and Investment Banking firms with many years experience in Financial Advisory, Auditing, Accounting and Tax.</p>
+                </div>
+                <div class="half">
+                    <h2>WORKING WITH MANY CLIENTS</h2>
+                    <p class="text-team">Our team members have successfully helped numerous clients in various industries to achieve their financial goals such as: Vingroup, Thaco, Truong Hai Furniture, Century Textile, HAGL, Hoa Binh Construction, Tiki, DatVietVAC, Khang Dien House, Fuji Electric, Hoan My Hospital, and many more.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section-doitac">
+            <h1 class="title">PARTNER</h1>
+            <div class="imgs">
+                <img src="./img/dt1.png" alt="" srcset="">
+                <img src="./img/dt2.png" alt="" srcset="">
+            </div>
+        </div>
+    </div>
+    <div class="container-team" id="services">
+        <div class="section-doitac">
+            <h1 class="title">DỊCH VỤ</h1>
+            <div class="container-services">
+                <div class="section tu-van">
+                    <h2 class="title-services">TƯ VẤN</h2>
+                </div>
+                <div class="section list-dich-vu">
+                    <ul>
+                        <li>Kiểm soát nội bộ, quy trình nghiệp vụ, đánh giá rủi ro</li>
+                        <li>Lập kế hoạch, dự báo tài chính</li>
+                        <li>Soát xét cho mục đích đặc biệt (Due Diligence)</li>
+                        <li>Tái cấu trúc tài chính, lập kế hoạch IPO, huy động vốn</li>
+                        <li>Giao dịch M&A, lập mô hình tài chính</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-services">
+                <div class="section tu-van">
+                    <h2 class="title-services">KẾ TOÁN</h2>
+                </div>
+                <div class="section list-dich-vu">
+                    <ul>
+                        <li>Tư vấn kế toán</li>
+                        <li>Đào tạo kế toán (IFRS, VAS)</li>
+                        <li>Ghi sổ kế toán và lập báo cáo kế toán</li>
+                        <li>Dịch vụ quản lý rủi ro về thuế</li>
+                        <li>Kiểm tra sức khỏe thuế</li>
+                        <li>Chuyển giá</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container-services">
+                <div class="section tu-van">
+                    <h2 class="title-services">KIỂM TOÁN</h2>
+                </div>
+                <div class="section list-dich-vu">
+                    <ul>
+                        <li>Kiểm toán báo cáo tài chính</li>
+                        <li>Soát xét báo cáo tài chính</li>
+                        <li>Kiểm tra thông tin tài chính theo quy trình đã thống nhất</li>
+                        <li>Kiểm tra gian lận</li>
+                        <li>Kiểm toán theo yêu cầu đặc biệt</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-team" id="contact">
+        <div class="section-doitac">
+            <h1 class="title">LIÊN HỆ</h1>
+            <div class="info">
+                <div class="detail">
+                    <img src="./img/icons8-envelope-50.png" alt="" srcset="">
+                    <p class="text">cuong.bv@wud.vn</p>
+                </div>
+                <div class="detail">
+                    <img src="./img/icons8-location-50.png" alt="" srcset="">
+                    <p class="text">35/15A Phan Bội Châu, P.14, Q. Bình Thạnh, Tp HCM</p>
+                </div>
+                <div class="detail">
+                    <img src="./img/icons8-phone-50.png" alt="" srcset="">
+                    <p class="text">+84 397 059 805</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        const menuLinks = document.querySelectorAll('.header nav a');
+        console.log(menuLinks);
+        menuLinks.forEach(link => {
+        link.addEventListener('click', scrollToSection);
+        });
+
+        // Hàm di chuyển đến phần tử có id tương ứng
+        function scrollToSection(event) {
+        event.preventDefault();
+        const targetId = this.getAttribute('class');
+        console.log(targetId);
+        const targetElement = document.getElementById(targetId);
+        console.log(targetElement);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
