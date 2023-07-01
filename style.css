@@ -2,6 +2,7 @@ html {
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
   font-family: 'Courier New', Courier, monospace;
+  font-size: large;
 }
 
 html::-webkit-scrollbar {
