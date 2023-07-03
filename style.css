@@ -12,6 +12,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .container-index {
@@ -158,4 +159,8 @@ nav a {
   flex: 7;
   padding: 20px;
   justify-content: flex-start;
+}
+.section-doingu .section {
+  display: flex;
+  justify-content: space-between;
 }
