@@ -101,8 +101,11 @@ nav a {
   border-left: 2px solid #0bb5b8;
 }
 .text-team {
-  width: 60%;
+  width: 70%;
   text-align: start;
+}
+.half-right {
+  margin-left: -30px;
 }
 .title {
   padding-left: 25px;
