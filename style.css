@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Courier New';
+  src: url('./FontsFree-Net-cour.ttf') format('truetype');
+}
+
 html {
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
@@ -78,34 +83,33 @@ nav a {
   flex-direction: column;
 }
 .section {
-  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 30px;
 }
 .half {
-  /*flex: 1;*/
+  box-sizing: border-box;
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin-top: 0;
+  margin: 20px;
+  position: relative;
 }
 .half h2 {
   margin-top: 15px !important;
 }
-.half + .half {
+.line::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  height: 90%;
   border-left: 2px solid #0bb5b8;
-}
+  top: 10%;
+} 
 .text-team {
   width: 70%;
   text-align: start;
-}
-.half-right {
-  margin-left: -30px;
 }
 .title {
   padding-left: 25px;
