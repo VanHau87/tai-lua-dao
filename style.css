@@ -1,13 +1,12 @@
 @font-face {
-  font-family: 'Courier New';
+  font-family: 'wud-wud';
   src: url('./FontsFree-Net-cour.ttf') format('truetype');
 }
 
 html {
   overflow: -moz-scrollbars-none;
   scrollbar-width: none;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: large;
+  
 }
 
 html::-webkit-scrollbar {
@@ -17,7 +16,8 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'wud-wud', monospace;
+  font-size: large;
 }
 
 .container-index {
@@ -93,7 +93,7 @@ nav a {
   padding: 0 20px;
   display: flex;
   flex-direction: column;
-  margin: 20px;
+  margin: 20px 0px 20px 40px;
   position: relative;
 }
 .half h2 {
@@ -109,7 +109,7 @@ nav a {
 } 
 .text-team {
   width: 70%;
-  text-align: start;
+  text-align: justify;
 }
 .title {
   padding-left: 25px;
