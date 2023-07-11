@@ -13,7 +13,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Courier Prime', monospace;
+  font-family: 'Courier Prime', "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: large;
 }
 
